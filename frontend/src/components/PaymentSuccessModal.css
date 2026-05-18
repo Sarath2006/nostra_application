@@ -1,0 +1,30 @@
+.psm-overlay{position:fixed;inset:0;background:rgba(124, 118, 155, .25);backdrop-filter:blur(2px);display:flex;align-items:center;justify-content:center;z-index:1000}
+
+.psm-modal{position:relative;width:min(520px,92vw);background:#fff;border-radius:16px;box-shadow:0 20px 60px rgba(0,0,0,.2);padding:28px 24px 24px;text-align:center;overflow:visible}
+
+/* Success checkmark circle with anime.js */
+.psm-success-circle-wrapper{width:120px;height:120px;margin:0 auto 20px}
+/* CSS fallback in case anime.js doesn't load */
+.psm-success-circle-wrapper svg{display:block}
+
+.psm-close{position:absolute;top:10px;right:12px;border:none;background:transparent;font-size:24px;line-height:1;cursor:pointer;color:#6b7280}
+.psm-close:hover{color:#111827}
+.psm-illustration{width:92px;height:92px;border-radius:20px;margin:2px auto 10px;display:flex;align-items:center;justify-content:center}
+.psm-title{margin:10px 0 6px;font-weight:800;color:#111827;font-size:22px}
+.psm-subtitle{margin:0 0 18px;color:#6b7280;font-size:14px}
+.psm-amount-label{color:#6b7280;font-size:12px;margin-top:4px}
+.psm-amount{font-size:34px;font-weight:800;color:#0f172a;margin:6px 0 8px}
+.psm-meta{display:flex;align-items:center;justify-content:center;gap:8px;color:#6b7280;font-size:13px;margin-bottom:18px}
+.psm-dot{opacity:.6}
+.psm-actions{display:flex;gap:12px;justify-content:center}
+.psm-btn{display:inline-flex;align-items:center;gap:8px;border:1px solid #e5e7eb;background:#fff;color:#111827;border-radius:12px;padding:10px 14px;font-weight:600;cursor:pointer;transition:.15s;box-shadow:0 1px 0 rgba(0,0,0,.02)}
+.psm-btn:hover{transform:translateY(-1px);box-shadow:0 6px 12px rgba(17,24,39,.06)}
+.psm-btn.outline{background:#fff;color:#111827;border-color:#d1d5db}
+.psm-btn.outline:hover{background:#f9fafb}
+.psm-btn-icon{display:inline-flex;align-items:center;justify-content:center;width:26px;height:26px;border-radius:6px;background:#fff;color:#ef4444;border:1px solid #fecaca}
+.psm-btn-icon.pdf{background:#fee2e2;border-color:#fecaca}
+.psm-btn-icon.printer{background:#f1f5f9;border-color:#e5e7eb;color:#111827}
+
+/* Scalloped bottom border - removed */
+
+@media (max-width:420px){.psm-modal{padding:22px 16px}.psm-actions{flex-direction:column}.psm-btn{width:100%}}

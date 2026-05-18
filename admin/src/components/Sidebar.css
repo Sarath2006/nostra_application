@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+.sidebar {
+  width: 240px;
+  height: 100vh;
+  background: #fff;
+  border-right: 1px solid #e0e0e0;
+  padding: 20px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.sidebar-logo {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #1a73e8;
+}
+
+.sidebar-search {
+  margin-bottom: 20px;
+}
+
+.sidebar-search input {
+  width: 100%;
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+}
+
+.sidebar-section {
+  margin-bottom: 20px;
+}
+
+.sidebar-section-title {
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  color: #777;
+}
+
+.sidebar-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+  border-radius: 6px;
+  color: #333;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.sidebar-item:hover,
+.sidebar-item.active {
+  background-color: #f5f7fb;
+  color: #1a73e8;
+  width: 90%;
+}
+
+.sidebar-icon {
+  font-size: 18px;
+}
+
+.sidebar-icon.small {
+  font-size: 16px;
+}
+
+.sidebar-dropdown {
+  margin-bottom: 10px;
+}
+
+.sidebar-submenu {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-subitem {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  gap: 8px;
+  border-radius: 6px;
+  color: #555;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.sidebar-subitem:hover,
+.sidebar-subitem.active {
+  background-color: #f0f0f0;
+  color: #1a73e8;
+}
+
+.sidebar-profile {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px;
+  background: #f5f7fb;
+  border-radius: 8px;
+}
+
+.profile-pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.sidebar-profile h4 {
+  font-size: 14px;
+  margin: 0;
+}
+.sidebar-profile p {
+  font-size: 12px;
+  margin: 0;
+  color: #777;
+}
+
+.sidebar-item {
+  display: flex;
+  font-family: 'Poppins', sans-serif;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 16px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #334155;
+  text-decoration: none;
+  border: none;
+  background: none;
+  width: 100%;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
+  border-radius: 8px;
+}
+
+.sidebar-item:hover {
+  background: #f1f5f9;
+  color: #2563eb;
+}
+
+.sidebar-icon {
+  font-size: 18px;
+}

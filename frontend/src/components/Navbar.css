@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 3000;
+  background-color: #fff;
+}
+
+/* Top Banner */
+.navbar-banner {
+  background-color: #111;
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+  padding: 6px 40px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-banner a {
+  color: #fff;
+  font-weight: bold;
+  margin-left: 5px;
+  text-decoration: underline;
+}
+
+.close-icon {
+  position: absolute;
+  right: 20px;
+  font-size: 18px;
+  cursor: pointer;
+  color: #fff;
+}
+
+/* Main Navbar */
+.navbar-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  border-bottom: 1px solid #eee;
+  background-color: #fff;
+  position: relative;
+  z-index: 2000; /* ✅ keep menu on top */
+}
+
+.navbar-logo img {
+  height: 40px;
+  width: auto;
+  display: block;
+}
+
+/* Hamburger */
+.hamburger {
+  display: none;
+  cursor: pointer;
+  font-size: 24px; /* ✅ make visible */
+  color: #333;
+}
+
+/* Links */
+.navbar-links {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  justify-content: center; /* ✅ center the nav links */
+  flex: 1; /* ✅ makes them flexible and centered */
+  transition: all 0.3s ease;
+}
+
+
+ .menu{
+    display: flex;
+  align-items: center;
+  justify-content: center; /* center horizontally */
+  gap: 20px;
+  margin-left: 0; /* remove hardcoding */
+  padding-left: 0;
+  flex: 1; /* allows menu to take remaining space */
+  }
+
+.navbar-links a {
+  text-decoration: none;
+  color: #000;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 6px 0;
+  transition: color 0.2s ease;
+  position: relative;
+}
+
+.navbar-links a::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #111;
+  transition: width 0.3s ease;
+}
+
+.navbar-links a:hover::after {
+  width: 100%;
+}
+
+/* Active link styling - underline comes from left to right */
+.navbar-links a.active:not(:first-child)::after {
+  width: 100%;
+}
+
+.navbar-links a:hover {
+  color: #666;
+}
+
+/* Actions */
+.navbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-left: 20px; /* ✅ spacing between links & actions */
+}
+
+.navbar-actions .icon {
+  font-size: 20px;
+  cursor: pointer;
+  color: #333;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 8px 10px;
+  background-color: #fff;
+}
+
+.search-box input {
+  border: none;
+  outline: none;
+  font-size: 14px;
+  padding-left: 5px;
+  width: 150px;
+  flex: 1;
+}
+
+.search-box input::placeholder {
+  color: #999;
+}
+
+.search-icon {
+  font-size: 18px;
+  color: #666;
+  cursor: pointer;
+}
+
+
+.cart-link {
+  position: relative;
+  display: inline-block;
+}
+
+.cart-icon {
+  font-size: 1.8rem;
+  color: black;
+}
+
+.cart-badge {
+  position: absolute;
+  top: 15px;         /* adjust vertical position */
+  right: -5px;      /* adjust horizontal position */
+  background-color: black;
+  color: white;
+  width: 20px;
+  height: 20px;
+  font-size: 12px;
+  text-align: center;
+  line-height: 20px;
+  border-radius: 50%;
+  font-weight: bold;
+}
+
+.user-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.user-avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-right: -10px;
+}
+
+.user-avatar:hover {
+  background-color: #333;
+  transform: scale(1.05);
+}
+
+.icon {
+  font-size: 28px;
+  color: #333;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.icon:hover {
+  color: #000;
+}
+
+/* Dropdown menu */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 33px; /* slightly closer to icon so no gap */
+  right: 0;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  min-width: 150px;
+  padding: 10px 0;
+  z-index: 20;
+  pointer-events: auto;
+}
+
+/* Keep visible when hovering icon OR dropdown */
+.user-dropdown:hover .dropdown-menu,
+.dropdown-menu:hover {
+  display: block;
+}
+
+/* Menu items */
+.dropdown-menu p {
+  margin: 0;
+  padding: 10px 16px;
+  font-size: 15px;
+  color: #444;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.dropdown-menu p:hover {
+  background-color: #f5f5f5;
+  color: #000;
+}
+
+/* ----------------- RESPONSIVE ----------------- */
+
+/* Tablet */
+@media (max-width: 992px) {
+  .navbar-main {
+    padding: 12px 20px;
+  }
+
+  .navbar-links {
+    margin-left: 0; /* ✅ remove large margin */
+    gap: 15px;
+  }
+
+  .search-box input {
+    font-size: 13px;
+  }
+ 
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+    z-index: 2001;
+  }
+   .navbar-logo img {
+    height: 0; /* ✅ small but still visible */
+    width: auto;
+  }
+
+  .navbar-links {
+    display: flex;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    background: #fff;
+    padding: 20px;
+    gap: 15px;
+    border-top: 1px solid #eee;
+    transform: translateY(-200%);
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .menu{
+    display: flex;
+    flex-direction: column; /* ✅ stack vertically on mobile */
+    align-items: flex-start;
+    margin-left: 0;
+    padding-left: 0;
+    gap: 15px;
+  }
+
+  .navbar-links.active {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+}
+
+  .navbar-actions {
+    gap: 12px;
+  }
+
+  .search-box {
+    display: none; /* hide search on smaller screens */
+  }
+}
+
+/* Extra Small Mobile */
+@media (max-width: 480px) {
+  .navbar-main {
+    flex-wrap: nowrap; /* ✅ prevent line breaking */
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  .navbar-logo img {
+    height: 0;
+  }
+
+  .navbar-actions {
+    gap: 10px;
+  }
+
+  .navbar-links {
+    font-size: 14px;
+  }
+}

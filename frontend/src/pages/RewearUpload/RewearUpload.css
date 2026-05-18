@@ -1,0 +1,269 @@
+/* ================================
+   REWEAR UPLOAD – ISOLATED STYLES
+   Scope: .rewear-page ONLY
+================================ */
+
+/* ---------- Page Base ---------- */
+.rewear-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 24px 80px;
+  font-family: "Inter", "Poppins", sans-serif;
+  background: #ffffff;
+  color: #111827;
+}
+
+.rewear-page h2 {
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+
+.rewear-page .subtitle {
+  font-size: 14px;
+  color: #6b7280;
+  margin-bottom: 28px;
+}
+
+/* ---------- Info Box ---------- */
+.rewear-page .info-box {
+  border: 1px solid #e5e7eb;
+  background: #fafafa;
+  padding: 20px 24px;
+  margin-bottom: 40px;
+}
+
+.rewear-page .info-box ul {
+  margin: 0;
+  padding-left: 18px;
+  font-size: 14px;
+  color: #374151;
+  line-height: 1.8;
+}
+
+/* ---------- Item Card ---------- */
+.rewear-page .item-card {
+  border: 1px solid #e5e7eb;
+  padding: 32px;
+  margin-bottom: 28px;
+}
+
+.rewear-page .item-card h4 {
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+
+/* ---------- Image Upload ---------- */
+.rewear-page .upload-wrapper {
+  margin-bottom: 24px;
+}
+
+.rewear-page .image-count {
+  font-size: 13px;
+  color: #6b7280;
+  margin-bottom: 8px;
+}
+
+.rewear-page .upload-box {
+  width: 160px;
+  height: 180px;
+  border: 2px dashed #d1d5db;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.rewear-page .upload-box:hover {
+  border-color: #9ca3af;
+}
+
+/* Upload Icon */
+.rewear-page .upload-box::before {
+  content: "";
+  width: 26px;
+  height: 26px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%239ca3af'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='1.8' d='M12 16V4m0 0l-4 4m4-4l4 4M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-bottom: 8px;
+}
+
+.rewear-page .upload-box span {
+  font-size: 13px;
+  color: #6b7280;
+}
+
+.rewear-page .min-images-text {
+  font-size: 12px;
+  color: #9ca3af;
+  margin-top: 8px;
+}
+
+/* ---------- Form Row ---------- */
+.rewear-page .form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 24px;
+  margin-top: 12px;
+}
+
+.rewear-page select {
+  width: 100%;
+  padding: 14px 14px;
+  font-size: 14px;
+  border: 1px solid #d1d5db;
+  background: #ffffff;
+  outline: none;
+}
+
+.rewear-page select:focus {
+  border-color: #111827;
+}
+
+/* ---------- Pickup Section ---------- */
+.rewear-page .pickup-section {
+  margin-top: 36px;
+  border-top: 1px solid #e5e7eb;
+  padding-top: 28px;
+}
+
+.rewear-page .pickup-section h5 {
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 14px;
+}
+
+.rewear-page .pickup-section input,
+.rewear-page .pickup-section select {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #d1d5db;
+  font-size: 14px;
+  outline: none;
+}
+
+.rewear-page .pickup-section input:focus,
+.rewear-page .pickup-section select:focus {
+  border-color: #111827;
+}
+
+.rewear-page .pickup-section .row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 16px;
+  margin-top: 14px;
+}
+
+/* ---------- Add Item ---------- */
+.rewear-page .add-item {
+  width: 100%;
+  padding: 18px;
+  margin-top: 12px;
+  border: 2px dashed #d1d5db;
+  background: #ffffff;
+  color: #6b7280;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.rewear-page .add-item:hover {
+  border-color: #9ca3af;
+  color: #111827;
+}
+
+/* ---------- Actions ---------- */
+.rewear-page .actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-top: 36px;
+}
+
+.rewear-page .actions button {
+  padding: 18px;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Cancel */
+.rewear-page .actions .cancel {
+  background: #ffffff;
+  border: 1px solid #d1d5db;
+  color: #111827;
+}
+
+/* Submit */
+.rewear-page .actions .submit {
+  background: #000000;
+  color: #ffffff;
+}
+
+.rewear-page .actions .submit:hover {
+  background: #111827;
+}
+
+.image-preview-row {
+  display: flex;
+  gap: 10px;
+  margin-top: 12px;
+  flex-wrap: wrap;
+}
+
+.preview-thumb {
+  width: 70px;
+  height: 70px;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.preview-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.form-error-box {
+  background: #fff5f5;
+  border: 1px solid #fecaca;
+  color: #b91c1c;
+  padding: 14px 16px;
+  margin: 20px 0;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.form-error-box::before {
+  content: "⚠ ";
+  font-weight: bold;
+}
+
+.form-success-box {
+  background: #f0fdf4;
+  border: 1px solid #bbf7d0;
+  color: #166534;
+  padding: 14px 16px;
+  margin: 20px 0;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.form-success-box::before {
+  content: "✔ ";
+  font-weight: bold;
+}
+
+
+/* ---------- Responsive ---------- */
+@media (max-width: 900px) {
+  .rewear-page .form-row,
+  .rewear-page .pickup-section .row,
+  .rewear-page .actions {
+    grid-template-columns: 1fr;
+  }
+}

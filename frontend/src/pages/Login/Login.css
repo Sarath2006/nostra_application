@@ -1,0 +1,418 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+
+.auth-box {
+  width: 100%;
+  max-width: 400px;
+  background: #fff;
+  padding: 40px;
+  border-radius: 12px;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+  text-align: center;
+}
+
+.subtitle {
+  text-align: center;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.google-btn {
+  width: 100%;
+  padding: 10px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.divider {
+  text-align: center;
+  color: #aaa;
+  margin-bottom: 20px;
+  position: relative;
+}
+.divider::before,
+.divider::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 40%;
+  height: 1px;
+  background: #eee;
+}
+.divider::before { left: 0; }
+.divider::after { right: 0; }
+
+.form input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 14px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+.form-extra {
+  display: flex;
+  justify-content: space-between; /* checkbox on left, link on right */
+  align-items: center;
+  font-size: 0.85rem;
+  color: #555;
+  margin-top: 12px;      /* ⬅️ push the entire row downward */
+  margin-bottom: 16px;   /* keep spacing below */
+}
+
+.form-extra label {
+  display: flex;
+  align-items: center;
+  gap: 6px;              /* space between checkbox and text */
+  cursor: pointer;
+}
+
+.form-extra input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  accent-color: #111827; /* checkbox tick color */
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.form-extra a {
+  color: #111827;
+  text-decoration: none;
+}
+
+.form-extra a:hover {
+  text-decoration: underline;
+}
+
+.primary-btn {
+  width: 100%;
+  padding: 12px;
+  background: #111827;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.switch {
+  text-align: center;
+  margin-top: 16px;
+  color: #555;
+}
+.switch span {
+  color: #111827;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+
+.google-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;                  /* space between icon and text */
+  width: 100%;
+  padding: 10px 0;
+  background-color: #fff;     /* white background */
+  color: #3c4043;             /* Google grey text */
+  border: 1px solid #dadce0;  /* subtle border */
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.google-btn:hover {
+  background-color: #f7f8f8;  /* light hover effect */
+  box-shadow: 0 1px 4px rgba(0,0,0,0.15);
+}
+
+.google-icon {
+  font-size: 20px;           /* size of FcGoogle icon */
+  flex-shrink: 0;            /* prevent shrinking */
+}
+
+/* Responsive Design */
+
+/* Large Screens (1440px and above) */
+@media (min-width: 1440px) {
+  .auth-box {
+    max-width: 480px;
+    padding: 50px;
+  }
+
+  .title {
+    font-size: 1.75rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  .form input {
+    padding: 14px;
+    font-size: 1rem;
+  }
+
+  .primary-btn,
+  .google-btn {
+    padding: 14px;
+    font-size: 1rem;
+  }
+}
+
+/* Laptops (1024px - 1440px) */
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .auth-box {
+    max-width: 420px;
+    padding: 40px;
+  }
+}
+
+/* Tablets (768px - 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .auth-container {
+    padding: 20px;
+  }
+
+  .auth-box {
+    max-width: 500px;
+    padding: 35px;
+  }
+
+  .title {
+    font-size: 1.4rem;
+  }
+
+  .subtitle {
+    font-size: 0.95rem;
+  }
+
+  .form input {
+    padding: 12px;
+  }
+
+  .google-btn,
+  .primary-btn {
+    padding: 12px;
+  }
+}
+
+/* Small Tablets & Large Phones (576px - 767px) */
+@media (min-width: 576px) and (max-width: 767px) {
+  .auth-container {
+    padding: 16px;
+  }
+
+  .auth-box {
+    max-width: 450px;
+    padding: 30px 25px;
+  }
+
+  .title {
+    font-size: 1.35rem;
+  }
+
+  .subtitle {
+    font-size: 0.9rem;
+  }
+
+  .form input {
+    padding: 11px;
+    font-size: 0.95rem;
+  }
+
+  .google-btn,
+  .primary-btn {
+    padding: 11px;
+    font-size: 0.95rem;
+  }
+
+  .google-icon {
+    font-size: 18px;
+  }
+
+  .form-extra {
+    font-size: 0.8rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .switch {
+    font-size: 0.9rem;
+  }
+}
+
+/* Mobile (320px - 575px) */
+@media (max-width: 575px) {
+  .auth-container {
+    padding: 12px;
+    height: auto;
+    min-height: 100vh;
+  }
+
+  .auth-box {
+    max-width: 100%;
+    padding: 25px 20px;
+    border-radius: 10px;
+  }
+
+  .title {
+    font-size: 1.25rem;
+    margin-bottom: 6px;
+  }
+
+  .subtitle {
+    font-size: 0.85rem;
+    margin-bottom: 18px;
+  }
+
+  .google-btn {
+    padding: 10px;
+    font-size: 0.9rem;
+    margin-bottom: 16px;
+  }
+
+  .google-icon {
+    font-size: 18px;
+  }
+
+  .divider {
+    margin-bottom: 16px;
+    font-size: 0.85rem;
+  }
+
+  .form input {
+    padding: 10px;
+    margin-bottom: 12px;
+    font-size: 0.9rem;
+  }
+
+  .form-extra {
+    font-size: 0.75rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    margin-top: 8px;
+    margin-bottom: 12px;
+  }
+
+  .form-extra input[type="checkbox"] {
+    width: 14px;
+    height: 14px;
+  }
+
+  .primary-btn {
+    padding: 11px;
+    font-size: 0.95rem;
+    font-weight: 600;
+  }
+
+  .switch {
+    font-size: 0.85rem;
+    margin-top: 14px;
+  }
+}
+
+/* Extra Small Mobile (below 375px) */
+@media (max-width: 374px) {
+  .auth-box {
+    padding: 20px 16px;
+  }
+
+  .title {
+    font-size: 1.15rem;
+  }
+
+  .subtitle {
+    font-size: 0.8rem;
+  }
+
+  .google-btn,
+  .primary-btn {
+    padding: 9px;
+    font-size: 0.85rem;
+  }
+
+  .form input {
+    padding: 9px;
+    font-size: 0.85rem;
+  }
+
+  .form-extra {
+    font-size: 0.7rem;
+  }
+
+  .switch {
+    font-size: 0.8rem;
+  }
+}
+
+/* Landscape Mode for Mobile/Tablets */
+@media (max-height: 600px) and (orientation: landscape) {
+  .auth-container {
+    height: auto;
+    padding: 20px;
+    min-height: 100vh;
+  }
+
+  .auth-box {
+    padding: 25px;
+    margin: 20px auto;
+  }
+
+  .title {
+    font-size: 1.2rem;
+    margin-bottom: 4px;
+  }
+
+  .subtitle {
+    font-size: 0.85rem;
+    margin-bottom: 14px;
+  }
+
+  .google-btn {
+    padding: 8px;
+    margin-bottom: 14px;
+  }
+
+  .divider {
+    margin-bottom: 14px;
+  }
+
+  .form input {
+    padding: 9px;
+    margin-bottom: 10px;
+  }
+
+  .form-extra {
+    margin-top: 8px;
+    margin-bottom: 10px;
+  }
+
+  .primary-btn {
+    padding: 9px;
+  }
+
+  .switch {
+    margin-top: 12px;
+  }
+}

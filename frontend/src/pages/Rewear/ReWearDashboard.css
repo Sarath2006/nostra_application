@@ -1,0 +1,286 @@
+.rewear-container {
+  padding: 40px 60px;
+  background: #ffffff;
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Header */
+.rewear-header h1 {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.rewear-header p {
+  color: #6b7280;
+  font-size: 14px;
+}
+
+/* Stats */
+.rewear-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+  margin-top: 30px;
+}
+
+.stat-card {
+  border: 1px solid #e5e7eb;
+  padding: 22px;
+  border-radius: 6px;
+  background: #fff;
+}
+
+.stat-value {
+  font-size: 24px;
+  font-weight: 500;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.stat-card p {
+  font-size: 13px;
+  color: #6b7280;
+}
+
+/* Wallet */
+.wallet-card {
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  padding: 24px;
+  margin-top: 40px;
+}
+
+.wallet-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.wallet-header h3 {
+  font-size: 18px;
+  margin-bottom: 4px;
+}
+
+.wallet-header p {
+  font-size: 13px;
+  color: #6b7280;
+}
+
+.wallet-coins h2 {
+  font-size: 26px;
+  margin: 0;
+  text-align: right;
+}
+
+.wallet-coins span {
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.wallet-note {
+  margin-top: 14px;
+  border: 1px dashed #e5e7eb;
+  padding: 12px 14px;
+  border-radius: 6px;
+  background: #f9fafb;
+  color: #374151;
+  font-size: 13px;
+}
+
+/* Button */
+.rewear-btn {
+  margin-top: 20px;
+  width: 100%;
+  background: #000;
+  color: #fff;
+  border: none;
+  padding: 14px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.rewear-btn:hover {
+  opacity: 0.9;
+}
+
+/* Impact Messages Section */
+.impact-messages-section {
+  margin-top: 40px;
+}
+
+.impact-messages-section h3 {
+  font-size: 18px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.impact-messages-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.impact-message-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 20px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #f0fdf4 0%, #f9fafb 100%);
+  transition: all 0.3s ease;
+}
+
+.impact-message-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transform: translateY(-2px);
+}
+
+.impact-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  background: #16a34a;
+  color: white;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.impact-content {
+  flex: 1;
+}
+
+.impact-content p {
+  font-size: 14px;
+  color: #374151;
+  line-height: 1.6;
+  margin: 0 0 8px 0;
+}
+
+.impact-date {
+  font-size: 12px;
+  color: #6b7280;
+  font-style: italic;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.msg-id {
+  font-size: 11px;
+  color: #999;
+  font-weight: 500;
+  display: block;
+  letter-spacing: 0.5px;
+}
+
+/* Orders */
+.orders-section {
+  margin-top: 50px;
+}
+
+.orders-section h3 {
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
+.orders-table {
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+}
+
+.table-head {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  padding: 14px 20px;
+  font-size: 12px;
+  color: #374151;
+  border-bottom: 1px solid #e5e7eb;
+  background: #f9fafb;
+}
+
+.table-empty {
+  text-align: center;
+  padding: 40px;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.stat-icon {
+  font-size: 24px;
+  color: #9ca3af;
+  margin-bottom: 10px;
+}
+
+.table-row {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  padding: 14px 20px;
+  font-size: 13px;
+  border-bottom: 1px solid #e5e7eb;
+  align-items: center;
+}
+
+.table-row:last-child {
+  border-bottom: none;
+}
+
+.order-id {
+  font-family: monospace;
+  color: #374151;
+}
+
+.status {
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+.status.pending {
+  color: #ca8a04;
+}
+
+.status.picked {
+  color: #2563eb;
+}
+
+.status.verified {
+  color: #7c3aed;
+}
+
+.status.completed {
+  color: #16a34a;
+}
+
+@media (max-width: 768px) {
+  .rewear-container {
+    padding: 24px 16px;
+  }
+
+  .impact-message-card {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .impact-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .table-head,
+  .table-row {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6px;
+  }
+
+  .table-head span:nth-child(4),
+  .table-head span:nth-child(5),
+  .table-row span:nth-child(4),
+  .table-row span:nth-child(5) {
+    display: none;
+  }
+}

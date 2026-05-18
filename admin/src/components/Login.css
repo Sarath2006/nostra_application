@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.login-container {
+  display: flex;
+  justify-content: center;  /* centers horizontally */
+  align-items: center;      /* centers vertically */
+  min-height: 100vh;        /* full screen height */
+  width: 100%;              /* full width */
+  background: #f8fafc;      /* light background */
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+
+.login-box {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+}
+
+.login-box h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.login-box label {
+  font-size: 14px;
+  margin-bottom: 0.3rem;
+  display: block;
+}
+
+.login-box input {
+  width: 100%;
+  padding: 0.7rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+
+}
+
+.login-box button {
+  width: 100%;
+  padding: 0.8rem;
+  background: black;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+      font-family: 'Poppins', Arial, Helvetica, sans-serif;
+
+}
+
+.login-box button:hover {
+  background: #333;
+}

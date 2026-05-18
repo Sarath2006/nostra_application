@@ -1,0 +1,42 @@
+.brands-section {
+  width: 100%;
+  padding: 30px 0;
+  overflow: hidden;
+  background: #fff;
+}
+
+.brands-title {
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  padding-left: 20px;
+}
+
+.brands-slider {
+  display: flex;
+  justify-content: center;   /* center align logos */
+  align-items: center;
+  flex-wrap: wrap;           /* wrap if screen is smaller */
+  gap: 142px;                 /* spacing between logos */
+  width: 100%;
+  margin-top: 50px;
+}
+
+.brand-logo {
+  flex: 0 1 auto;            /* flexible width */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.brand-logo img {
+  max-height: 55px;
+  width: auto;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.brand-logo.brand-large img {
+  max-height: 100px;   /* make Adidas bigger */
+}
